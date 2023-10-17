@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}<h1> Lista Alunos </h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID </th>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.alunos)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.nome</td>
+                <td>@item.idade</td>
+                <td>@item.sexo</td>
+            </tr>
+        }
+    </tbody>
+</table>
