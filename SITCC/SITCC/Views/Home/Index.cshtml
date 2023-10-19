@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">desc</th>
+            <th scope="col">preco</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.produtos)
+        {
+
+
+            <tr>
+                <th scope="row">1</th>
+                <td>@item.proID</td>
+                <td>@item.nomeproduto</td>
+                <td>@item.descricaoproduto</td>
+                <td>@item.preco</td>
+
+                <td><a class="btn btn-outline-warning" href="/Home/atualizar/@item.proID">Editar</a></td>
+                <td><a class="btn btn-outline-danger" href="/Home/Apagar/@item.proID">Deletar</a></td>
+
+            </tr>
+
+
+        }
+
+    </tbody>
+</table>
+
+
+

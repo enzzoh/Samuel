@@ -1,0 +1,19 @@
+﻿<h1>Novo Produto</h1>
+<form action="/Home/Create" method="post">
+    <div class="form-group">
+        <label for="nomeproduto">Nome do Produto</label>
+        <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" aria-describedby="nomeproduto" placeholder="Digite o nome do Produto" required>
+    </div>
+    <div class="form-group">
+        <label for="descricaoproduto">Descrição do Produto</label>
+        <input type="text" class="form-control" id="descricaoproduto" name="descricaoproduto" aria-describedby="descricaoproduto" required>
+    </div>
+    <div class="form-group">
+        <label for="preco">Preço do Produto</label>
+        <input type="text" class="form-control" id="preco" name="preco" aria-describedby="PrecoProduto" placeholder="Digite o Preço do Produto" required>
+    </div>
+     
+ 
+    <button type="submit" class="btn btn-success">Salvar</button>
+</form>
+<td><a href="/Home/Index" class="btn btn-secondary">Voltar</a></td>

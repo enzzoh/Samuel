@@ -22,10 +22,7 @@ namespace tst2.DAL
 
         }
 
-        internal List<alunos> Query<T>(string sql)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
 
