@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "be3XO+jajLsXZqeqEuaYGBzf3e5ZvlqYTbyO+8TB2T3kr1sBZgzNZ/sIttz1yPMPaU1Q564/au0tEoQJw78Idg==",
+  "dgSpecHash": "LEKCIOFeXyxCNsmv41Wt16PxUSBX9g1OAMlpUIY8Ca6C7QYIklTjjLH3Y3s53MZOxFxQuUJgoVd+8H+w5FaIXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\android\\source\\repos\\SITCC\\SITCC\\SITCC.csproj",
+  "projectFilePath": "C:\\Users\\android\\Desktop\\Samuel\\SITCC\\SITCC\\SITCC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\android\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

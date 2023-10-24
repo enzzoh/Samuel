@@ -11,6 +11,7 @@ namespace SITCC.Models
         public string nomeproduto { get; set; }
         public double preco { get; set; }
         public string descricaoproduto { get; set; }
+        public string fotoproduto { get; set; }
 
     }
 }
