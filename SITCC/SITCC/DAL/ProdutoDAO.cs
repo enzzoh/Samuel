@@ -28,14 +28,14 @@ namespace SITCC.DAL
 
         public void InsertProduto(produto novoProduto)
         {
-            string query = "Insert into produtos (nomeproduto, preco, descricaoproduto) values (@nomeproduto, @preco, @descricaoproduto)";
+            string query = "Insert into produtos (nomeproduto, preco, descricaoproduto, fotoproduto) values (@nomeproduto, @preco, @descricaoproduto, @fotoproduto)";
 
             _connection.Execute(query, novoProduto);
         }
 
         public void UptdateProduto(produto EditarProduto)
         {
-            string query = "update produtos set nomeproduto=@nomeproduto, DescricaoProduto=@DescricaoProduto, preco=@preco  where proID=@proID";
+            string query = "update produtos set nomeproduto=@nomeproduto, DescricaoProduto=@DescricaoProduto, preco=@preco, fotoproduto=@fotoproduto  where proID=@proID";
 
             _connection.Execute(query, EditarProduto);
 

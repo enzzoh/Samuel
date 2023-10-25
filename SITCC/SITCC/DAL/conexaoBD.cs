@@ -18,7 +18,8 @@ namespace CárdapioV3_Tunado.DAL
                 if (_banco == null)
                 {
                     
-                    return _banco = new SqlConnection(@"Data Source=.\SENAI2022;Initial Catalog=siteTCC;User ID=sa;Password=senai.123");
+                   // return _banco = new SqlConnection(@"Data Source=.\SENAI2022;Initial Catalog=siteTCC;User ID=sa;Password=senai.123");
+                    return _banco = new SqlConnection(@"Data Source=DESKTOP-9QCDCE8;Initial Catalog=siteTCC;Integrated Security=True");
                 }
                 else
                 {

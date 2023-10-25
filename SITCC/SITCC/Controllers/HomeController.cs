@@ -43,11 +43,12 @@ namespace SITCC.Controllers
 
         [HttpPost]
 
-        public IActionResult create(string nomeproduto, double preco, string descricaoproduto)
+        public IActionResult create(string nomeproduto, double preco, string descricaoproduto, string fotoproduto)
         {   
             
             produto NovoProduto = new produto();
             NovoProduto.nomeproduto = nomeproduto;
+            NovoProduto.fotoproduto = fotoproduto;
             NovoProduto.preco = preco;
             NovoProduto.descricaoproduto = descricaoproduto;
             produto.InsertProduto(NovoProduto);
@@ -65,13 +66,14 @@ namespace SITCC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Atualizar(string nomeproduto, string descricaoproduto, string codigo, double preco)
+        public IActionResult Atualizar(string nomeproduto, string descricaoproduto, string codigo, double preco, string fotoproduto)
         {
            
        
             produto AtualizarProduto = new produto();
             AtualizarProduto.proID = Convert.ToInt32(codigo);
             AtualizarProduto.nomeproduto = nomeproduto;
+            AtualizarProduto.fotoproduto = fotoproduto;
             AtualizarProduto.descricaoproduto = descricaoproduto;
             AtualizarProduto.preco = preco;
 
@@ -91,25 +93,6 @@ namespace SITCC.Controllers
 
             return RedirectToAction("Index");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         public IActionResult Privacy()
