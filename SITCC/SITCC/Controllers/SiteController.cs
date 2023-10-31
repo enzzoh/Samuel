@@ -19,6 +19,11 @@ namespace SITCC.Controllers
             return View();
         }
 
+        public ActionResult comprar()
+        {
+            ViewBag.produtos = produto.getTodosProdutos();
+            return View();
+        }
         // GET: SiteController/Details/5
         public ActionResult Details(int id)
         {

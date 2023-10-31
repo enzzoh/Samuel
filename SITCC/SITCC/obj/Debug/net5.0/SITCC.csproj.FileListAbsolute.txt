@@ -152,3 +152,4 @@ C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\re
 C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\SITCC.pdb
 C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\SITCC.genruntimeconfig.cache
 C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\ref\SITCC.dll
+C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Site\comprar.cshtml.g.cs

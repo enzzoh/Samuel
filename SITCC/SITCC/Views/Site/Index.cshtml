@@ -144,25 +144,25 @@
                 @foreach (var item in ViewBag.produtos)
                 {
                     <div class="col mb-5">
-
                         <div class="card h-100">
-                            <!-- Product image-->
+                            <!-- Product image -->
                             <img class="card-img-top" src="@item.fotoproduto" alt="..." />
-                            <!-- Product details-->
+                            <!-- Product details -->
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <!-- Product name-->
+                                    <!-- Product name -->
                                     <h3 class="fw-bolder">@item.nomeproduto</h3>
                                     <h5 class="fw-bolder">@item.descricaoproduto</h5>
-                                    <!-- Product price-->
+                                    <!-- Product price -->
                                     R$:@item.preco
                                 </div>
-
                             </div>
-
-                            <!-- Product actions-->
+                            <!-- Product actions -->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="/site/comprar?proID=@item.proID">Comprar</a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
