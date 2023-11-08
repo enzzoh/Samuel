@@ -2,6 +2,7 @@
 using SITCC.DAL.CárdapioV3_Tunado.DAL;
 using SITCC.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -17,6 +18,12 @@ namespace SITCC.DAL
         {
             _connection = ConexaoBD.getConexao();
         }
+        public produto getprodutobyID(int id)
+        {
+            string query = "SELECT * FROM produtos WHERE proID = @id";
+            return _connection.QueryFirstOrDefault<produto>(query, new { id });
+        }
+
 
         public List<produto> getTodosProdutos()
         {

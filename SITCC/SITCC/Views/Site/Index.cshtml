@@ -122,7 +122,8 @@
 
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/site/comprar">Comprar</a></div>
+                                <div class="text-center"><form method="post" action="comprar"><a asp-controller="Site" asp-action="Comprar" asp-route-id="@item.proID" class="btn btn-primary">Selecionar Item</a> </form>
+                             </div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -43,11 +48,27 @@
             </div>
         </div>
     </nav>
-    <!-- Header-->
-  
- 
+    @if (ViewBag.ProdutoSelecionado != null)
+    {
+        <div>
+            <h1>Detalhes do Produto Selecionado</h1>
+            <p>Nome: @ViewBag.ProdutoSelecionado.nomeproduto</p>
+            <p>Descrição: @ViewBag.ProdutoSelecionado.descricaoproduto</p>
+            <p>Preço: R$:@ViewBag.ProdutoSelecionado.preco</p>
+            
+        </div>
+    }
+    else
+    {
+        @foreach (var item in ViewBag.produtos)
+        {
+            <div>
+              @item.proID
 
-  
+            </div>
+        }
+    }
+    <!-- Header-->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SITCC.DAL;
+using SITCC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +12,41 @@ namespace SITCC.Controllers
     public class SiteController : Controller
     {
 
-        ProdutoDAO produto = new ProdutoDAO();
+        ProdutoDAO produtos = new ProdutoDAO();
+      
         // GET: SiteController
         public ActionResult Index()
         {
-            ViewBag.produtos = produto.getTodosProdutos();
+            ViewBag.produtos = produtos.getTodosProdutos();
+
+        
+
+
             return View();
         }
 
-        public ActionResult comprar()
+        public ActionResult Index1(int id)
         {
-            ViewBag.produtos = produto.getTodosProdutos();
+           ViewBag.produtos = produtos.getTodosProdutos();
             return View();
         }
+
+
+
+
+        public IActionResult comprar(int id)
+        {
+            produto selecionado = produtos.getprodutobyID(id);
+
+            if (selecionado != null)
+            {
+                ViewBag.ProdutoSelecionado = selecionado;
+            }
+
+            ViewBag.produtos = produtos.getTodosProdutos(); // Correção: Use "produtos" em vez de "produto"
+            return View("Index1");
+        }
+
         // GET: SiteController/Details/5
         public ActionResult Details(int id)
         {
