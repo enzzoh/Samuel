@@ -13,12 +13,13 @@ namespace SITCC.Controllers
     {
 
         ProdutoDAO produtos = new ProdutoDAO();
-      
+      AcessorioDAO A = new AcessorioDAO();
         // GET: SiteController
         public ActionResult Index()
         {
+            ViewBag.acessorios = A.getTodosAcessorios();
             ViewBag.produtos = produtos.getTodosProdutos();
-
+            ViewBag.produtosP = produtos.getprodutopopular();
         
 
 

@@ -20,7 +20,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in ViewBag.produtos)
+        @foreach (var item in ViewBag.acessorios)
         {
 
 
@@ -31,8 +31,8 @@
                 <td>@item.descricaoproduto</td>
                 <td>@item.preco</td>
 
-                <td><a class="btn btn-outline-warning" href="/Home/atualizar/@item.proID">Editar</a></td>
-                <td><a class="btn btn-outline-danger" href="/Home/Apagar/@item.proID">Deletar</a></td>
+                <td><a class="btn btn-outline-warning" href="/acessorio/atualizar/@item.proID">Editar</a></td>
+                <td><a class="btn btn-outline-danger" href="/acessorio/Apagar/@item.proID">Deletar</a></td>
 
             </tr>
 
@@ -40,8 +40,8 @@
         }
 
         <a class="btn btn-outline-dark mt-auto" href="~/site/index">site</a></div>
-        <a class="btn btn-outline-dark mt-auto" href="~/home/create">create</a></div>
-        <a class="btn btn-outline-dark mt-auto" href="~/acessorio/index">acessorio</a></div>
+        <a class="btn btn-outline-dark mt-auto" href="~/acessorio/create">create</a></div>
+        <a class="btn btn-outline-dark mt-auto" href="~/home/index">produto</a></div>
 
     </tbody>
 </table>

@@ -24,6 +24,14 @@ namespace SITCC.DAL
             return _connection.QueryFirstOrDefault<produto>(query, new { id });
         }
 
+        public List<produto> getprodutopopular()
+        {
+            string sql = "SELECT * FROM produtos WHERE proID IN (9,6,8);";
+            var dados = (List<produto>)_connection.Query<produto>(sql);
+            return dados;
+        }
+
+
 
         public List<produto> getTodosProdutos()
         {

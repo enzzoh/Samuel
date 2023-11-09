@@ -53,47 +53,7 @@
         </div>
     </header>
     <!-- Section-->
-   
-    <section class="py-5">
 
-       <h1>Itens populares</h1>
-
-        <div class="container px-4 px-lg-5 mt-5">
-          
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                @foreach (var item in ViewBag.produtos)
-                {
-            <div class="col mb-5">
-
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <img class="card-img-top" src="@item.fotoproduto" alt="..." />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h3 class="fw-bolder">@item.nomeproduto</h3>
-                            <h5 class="fw-bolder">@item.descricaoproduto</h5>
-                            <!-- Product price-->
-                            R$:@item.preco
-                        </div>
-
-                    </div>
-
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
-                    </div>
-                </div>
-            </div>            }
-
-
-
-
-            </div>  
-       </div>
-    </section>
-    
     <section class="py-5">
 
         <h1>Itens populares</h1>
@@ -102,6 +62,50 @@
 
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 @foreach (var item in ViewBag.produtos)
+                {
+                    <div class="col mb-5">
+
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="@item.fotoproduto" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h3 class="fw-bolder">@item.nomeproduto</h3>
+                                    <h5 class="fw-bolder">@item.descricaoproduto</h5>
+                                    <!-- Product price-->
+                                    R$:@item.preco
+                                </div>
+
+                            </div>
+
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form method="post" action="comprar"><a asp-controller="Site" asp-action="Comprar" asp-route-id="@item.proID" class="btn btn-primary">Selecionar Item</a> </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+
+        <h1>Itens populares</h1>
+
+        <div class="container px-4 px-lg-5 mt-5">
+
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                @foreach (var item in ViewBag.produtosP)
                 {
                     <div class="col mb-5">
 
@@ -135,6 +139,53 @@
             </div>
         </div>
     </section>
+
+    <section class="py-5">
+
+        <h1>Acessorios</h1>
+
+        <div class="container px-4 px-lg-5 mt-5">
+
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                @foreach (var item in ViewBag.acessorios)
+                {
+                    <div class="col mb-5">
+
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="@item.fotoproduto" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h3 class="fw-bolder">@item.nomeproduto</h3>
+                                    <h5 class="fw-bolder">@item.descricaoproduto</h5>
+                                    <!-- Product price-->
+                                    R$:@item.preco
+                                </div>
+
+                            </div>
+
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                    <form method="post" action="comprarAcessorio"><a asp-controller="Acessorio" asp-action="comprarAcessorio" asp-route-id="@item.proID" class="btn btn-primary">Selecionar Item</a> </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+  
+
     
 
         

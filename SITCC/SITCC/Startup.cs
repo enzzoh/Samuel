@@ -57,6 +57,10 @@ namespace SITCC
                 pattern: "site/comprar/{id}",
                 defaults: new { controller = "Site", action = "Comprar" });
 
+                endpoints.MapControllerRoute(
+                name: "comprarAcessorio",
+                pattern: "Site/comprarAcessorio/{id}",
+                defaults: new { controller = "Acessorio", action = "comprarAcessorio" });
             });
         }
     }

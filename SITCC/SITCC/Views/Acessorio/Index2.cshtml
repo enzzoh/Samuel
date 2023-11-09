@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -122,11 +127,11 @@
         </div>
     </nav>
 
-    @if (ViewBag.ProdutoSelecionado != null)
+    @if (ViewBag.AcessorioSelecionado != null)
     {
-        string nomeProduto = ViewBag.ProdutoSelecionado.nomeproduto.ToString();
-        string descricaoProduto = ViewBag.ProdutoSelecionado.descricaoproduto.ToString();
-        string precoProduto = ViewBag.ProdutoSelecionado.preco.ToString();
+        string nomeProduto = ViewBag.AcessorioSelecionado.nomeproduto.ToString();
+        string descricaoProduto = ViewBag.AcessorioSelecionado.descricaoproduto.ToString();
+        string precoProduto = ViewBag.AcessorioSelecionado.preco.ToString();
         string numeroWhatsApp = "+5579998881750";
 
         string mensagem = $"Olá! Estou interessado no seguinte produto:%0A%0ANome: {nomeProduto}%0ADescrição: {descricaoProduto}%0APreço: R${precoProduto}%0A%0AGostaria de obter mais informações sobre este produto.";
@@ -136,11 +141,11 @@
         <div class="container">
             <div class="product-details">
                 <h1>Detalhes do Produto Selecionado</h1>
-                <img src="@ViewBag.ProdutoSelecionado.fotoproduto" alt="@nomeProduto">
+                <img src="@ViewBag.AcessorioSelecionado.fotoproduto" alt="@nomeProduto">
                 <div>
                     <h3>Nome:</h3>
                     <h4>@nomeProduto</h4>
-                     <h3>Descrição</h3>
+                    <h3>Descrição</h3>
                     <h4>@descricaoProduto</h4>
                     <h3>Preço: </h3>
                     <h4> R$@precoProduto</h4>
@@ -152,7 +157,7 @@
     }
     else
     {
-        @foreach (var item in ViewBag.produtos)
+        @foreach (var item in ViewBag.Acessorios)
         {
             <div>
                 @item.proID

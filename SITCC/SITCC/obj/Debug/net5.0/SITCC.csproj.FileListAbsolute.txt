@@ -154,3 +154,7 @@ C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\SI
 C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\ref\SITCC.dll
 C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Site\comprar.cshtml.g.cs
 C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Site\Index1.cshtml.g.cs
+C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Acessorio\create.cshtml.g.cs
+C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Acessorio\atualizar.cshtml.g.cs
+C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Acessorio\Index.cshtml.g.cs
+C:\Users\Piteu\OneDrive\Documentos\GitHub\Samuel\SITCC\SITCC\obj\Debug\net5.0\Razor\Views\Acessorio\Index2.cshtml.g.cs
